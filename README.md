@@ -11,23 +11,33 @@ The source code and workflow definitions are contained within the `fv3net` submo
 
 ## Repository tree
 ```
-├── fv3net                                     Submodule of fv3net repository.
 ├── LICENSE
-├── Makefile                                   Rules to submit workflows.
-├── notebooks                                  Generate manuscript figures.
+├── Makefile                                Rules to submit workflows
 ├── README.md
-└── workflow                                   Configuration of workflows.
-    ├── baseline-run                           Year-long FV3GFS run with no ML.
-    ├── kustomization.yaml                     Specify Docker image tags to use.
-    ├── nudge-to-obs-run                       Two-year nudged FV3GFS run.
-    ├── prognostic-run-report                  Evaluate prognostic runs and generate report.
-    ├── train-evaluate-prognostic-run          Train ML models, evaluate offline, do year-long prognostic runs.
-    └── weather-forecasts                      10-day forecasts with baseline and ML-corrected FV3GFS.
+├── dag.png
+├── dag.txt
+├── fv3net                                  Submodule of fv3net repository
+├── install_kustomize.sh
+├── notebooks                               Jupyter notebooks to generate manuscript figures
+│   ├── figure1.png
+│   ├── figure2_figureS1_figureS2.ipynb
+│   ├── figure3_figureS3.ipynb
+│   ├── figure4_figureS4.ipynb
+│   ├── figureS5.ipynb
+│   ├── figureS6.ipynb
+│   └── how-active-is-humidity-limiter.ipynb
+└── workflow                                Configuration of workflows
+    ├── baseline-run                        Year-long FV3GFS run with no ML
+    ├── kustomization.yaml                  Specify Docker image tags to use
+    ├── nudge-to-obs-run                    Two-year nudged FV3GFS run
+    ├── prognostic-run-report               Evaluate prognostic runs and generate report
+    ├── train-evaluate-prognostic-run       Train ML models, evaluate offline, do year-long prognostic runs
+    └── weather-forecasts                   10-day forecasts with baseline, ML-corrected FV3GFS
 ```
 
 ## Dependencies
 
-The workflows used by this repository are written using [argo](https://argoproj.github.io/projects/argo) (argo v2.11.6 was used) and are designed to run on a [Kubernetes](https://kubernetes.io) cluster. The workflows do disparate things such as run the FV3GFS model, train machine learning models and compute diagnostics related to the performance of the ML models and FV3GFS simulations. They all output data to the Vulcan Climate Modeling group's Google Cloud Storage.
+The workflows used by this repository are written with [argo](https://argoproj.github.io/projects/argo) (argo v2.11.6 was used) and are designed to run on a [Kubernetes](https://kubernetes.io) cluster. The workflows do disparate things such as run the FV3GFS model, train machine learning models and compute diagnostics related to the performance of the ML models and FV3GFS simulations. They all output data to the Vulcan Climate Modeling group's Google Cloud Storage.
 
 The notebooks generate figures for the manuscript using the output on Google Cloud Storage from the argo workflows. The notebooks assume the `fv3net` python environment is active. This can be installed by calling `make create_environment`.
 
@@ -36,4 +46,3 @@ The notebooks generate figures for the manuscript using the output on Google Clo
 Dependencies of various workflows (grey ovals) and notebooks (white ovals):
 
 ![DAG](dag.png)
-
