@@ -1,23 +1,23 @@
 
 # do two-year nudge-to-obs run initialized 1 January 2015
 nudge_to_obs_run: kustomize
-	./kustomize build . | kubectl apply -f -
+	./kustomize build workflow | kubectl apply -f -
 	cd workflow/nudge-to-obs-run; ./run.sh
 
 # do year-long baseline run initialized 1 January 2016
 baseline_run: kustomize
-	./kustomize build . | kubectl apply -f -
+	./kustomize build workflow | kubectl apply -f -
 	cd workflow/baseline-run; ./run.sh
 
 # train ML models based on nudge-to-obs run and do year-long prognostic runs
 train_evaluate_prognostic_run: kustomize
-	./kustomize build . | kubectl apply -f -
+	./kustomize build workflow | kubectl apply -f -
 	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-control
 	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-dQ1-dQ2-only
 
 # do twelve 10-day weather forecast prognostic and baseline runs
 weather_forecast_runs: kustomize
-	./kustomize build . | kubectl apply -f -
+	./kustomize build workflow | kubectl apply -f -
 	cd workflow/weather-forecasts; ./run.sh 01
 	cd workflow/weather-forecasts; ./run.sh 02
 	cd workflow/weather-forecasts; ./run.sh 03
