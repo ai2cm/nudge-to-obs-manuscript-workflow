@@ -35,6 +35,9 @@ weather_forecast_runs: kustomize
 prognostic_reports: kustomize
 	cd workflow/prognostic-reports; ./run.sh
 
+create_environment:
+	make -C fv3net create_environment
+
 .PHONY: nudge_to_obs_run baseline_run train_evaluate_prognostic_run weather_forecast_runs prognostic_reports
 
 kustomize:
