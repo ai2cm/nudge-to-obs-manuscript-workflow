@@ -3,7 +3,7 @@
 set -e
 
 NAME=$1
-EXPERIMENT=2020-10-30-nudge-to-obs-GRL-paper/$NAME
+EXPERIMENT=2021-03-15-nudge-to-obs-GRL-paper-rev1/$NAME
 
 if [[ "$NAME" == "rf-control" ]]; then
     TRAINING_CONFIG="training-config.yaml"
