@@ -10,4 +10,4 @@ images:
 - name: us.gcr.io/vcm-ml/post_process_run
   newTag: 3bd4571641e87891838123cbebacbab336560ef1
 - name: us.gcr.io/vcm-ml/prognostic_run
-  newTag: 3bd4571641e87891838123cbebacbab336560ef1
+  newTag: 4e1ce6a68e4f71e85a8fa27552039e37aba15a15
