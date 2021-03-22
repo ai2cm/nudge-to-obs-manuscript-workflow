@@ -7,13 +7,13 @@ MONTH=$1
 RANDOM="$(openssl rand --hex 4)"
 IC_TIMESTAMP="2016${MONTH}01.000000"
 export IC_URL="gs://vcm-ml-raw/2020-11-05-GFS-month-start-initial-conditions-year-2016/2016${MONTH}0100"
-OUTPUT=gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/$IC_TIMESTAMP
+OUTPUT=gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/$IC_TIMESTAMP
 
 envsubst < "prognostic-run.yaml" > "prognostic-run-with-IC.yaml"
 
 # submit prognostic run forecasts
-for MODEL_NAME in "rf-control" "rf-dQ1-dQ2-only"; do
-    MODEL_URL=gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/${MODEL_NAME}/trained_model
+for MODEL_NAME in "rf-control rf-dQ1-dQ2-only"; do
+    MODEL_URL=gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/${MODEL_NAME}/trained_model
 
     argo submit \
         --from workflowtemplate/prognostic-run \
