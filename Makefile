@@ -33,6 +33,7 @@ weather_forecast_runs: kustomize
 
 # generate prognostic run reports
 prognostic_reports: kustomize
+	./kustomize build workflow | kubectl apply -f -
 	cd workflow/prognostic-run-report; ./run.sh
 
 create_environment:
