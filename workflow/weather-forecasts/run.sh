@@ -12,7 +12,7 @@ OUTPUT=gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-fo
 envsubst < "prognostic-run.yaml" > "prognostic-run-with-IC.yaml"
 
 # submit prognostic run forecasts
-for MODEL_NAME in "rf-control rf-dQ1-dQ2-only"; do
+for MODEL_NAME in "rf-control" "rf-dQ1-dQ2-only"; do
     MODEL_URL=gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/${MODEL_NAME}/trained_model
 
     argo submit \
