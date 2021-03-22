@@ -4,11 +4,11 @@
     "name": "baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/rf-control/prognostic_run",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/rf-control/prognostic_run",
     "name": "rf-control"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/rf-dQ1-dQ2-only/prognostic_run",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/rf-dQ1-dQ2-only/prognostic_run",
     "name": "rf-dQ1-dQ2-only"
   }
 ]
