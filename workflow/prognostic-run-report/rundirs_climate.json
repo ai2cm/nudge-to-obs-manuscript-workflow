@@ -10,5 +10,9 @@
   {
     "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/rf-dQ1-dQ2-only/prognostic_run",
     "name": "rf-dQ1-dQ2-only"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/rf-control-august/prognostic_run",
+    "name": "rf-control-august"
   }
 ]
