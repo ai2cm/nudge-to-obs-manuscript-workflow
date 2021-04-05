@@ -19,17 +19,18 @@ The source code and workflow definitions are contained within the `fv3net` submo
 ├── fv3net                                  Submodule of fv3net repository
 ├── install_kustomize.sh
 ├── notebooks                               Jupyter notebooks to generate manuscript figures
-│   ├── figure1.png
-│   ├── figure2_figureS1_figureS2.ipynb
-│   ├── figure3_figureS3.ipynb
-│   ├── figure4_figureS4.ipynb
-│   ├── figureS5.ipynb
-│   ├── figureS6.ipynb
-│   └── how-active-is-humidity-limiter.ipynb
+│   ├── figure1.png
+│   ├── figure2_figureS1_figureS6.ipynb
+│   ├── figure3_figureS2.ipynb
+│   ├── figure4_figureS3.ipynb
+│   ├── figureS4.ipynb
+│   ├── figureS5.ipynb
+│   └── how-active-is-humidity-limiter.ipynb
 └── workflow                                Configuration of workflows
     ├── baseline-run                        Year-long FV3GFS run with no ML
     ├── kustomization.yaml                  Specify Docker image tags to use
     ├── nudge-to-obs-run                    Two-year nudged FV3GFS run
+    ├── offline-report-on-training-data     Compute offline skill on training data
     ├── prognostic-run-report               Evaluate prognostic runs and generate report
     ├── train-evaluate-prognostic-run       Train ML models, evaluate offline, do year-long prognostic runs
     └── weather-forecasts                   10-day forecasts with baseline, ML-corrected FV3GFS
