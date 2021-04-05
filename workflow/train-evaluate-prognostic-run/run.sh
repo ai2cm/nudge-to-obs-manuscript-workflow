@@ -14,6 +14,9 @@ elif [[ "$NAME" == "rf-dQ1-dQ2-only" ]]; then
 elif [[ "$NAME" == "rf-control-august" ]]; then
     TRAINING_CONFIG="training-config.yaml"
     TRAIN_TIMES="train_times_august.json"
+elif [[ "$NAME" == "rf-control-august-2016" ]]; then
+    TRAINING_CONFIG="training-config.yaml"
+    TRAIN_TIMES="train_times_august_2016.json"
 else
     echo "Configuration not defined for ${NAME}"
     exit 1
@@ -33,6 +36,7 @@ argo submit \
     -p segment-count=12 \
     -p cpu-prog=6 \
     -p memory-prog="10Gi" \
+    -p memory-offline-diags="10Gi" \
     -p flags="--nudge-to-observations" \
     -p chunks="$(< chunks.yaml)"
 
