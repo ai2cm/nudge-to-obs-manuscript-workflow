@@ -17,6 +17,7 @@ train_evaluate_prognostic_run: kustomize
 	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-control
 	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-dQ1-dQ2-only
 	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-control-august
+	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-control-august-2016
 
 # generate offline skill report on training data to check for overfitting
 offline_report_on_training: kustomize
