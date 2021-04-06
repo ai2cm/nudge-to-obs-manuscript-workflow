@@ -10,10 +10,20 @@ baseline_run: kustomize
 	cd workflow/baseline-run; ./run.sh
 
 # train ML models based on nudge-to-obs run and do year-long prognostic runs
+# this workflow also makes a report that evaluates offline performance of the
+# ML model using an independent set of test data
 train_evaluate_prognostic_run: kustomize
 	./kustomize build workflow | kubectl apply -f -
 	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-control
 	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-dQ1-dQ2-only
+	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-control-august
+	cd workflow/train-evaluate-prognostic-run; ./run.sh rf-control-august-2016
+
+# generate offline skill report on training data to check for overfitting
+offline_report_on_training: kustomize
+	./kustomize build workflow | kubectl apply -f -
+	cd workflow/offline-report-on-training-data; ./run.sh rf-control
+	cd workflow/offline-report-on-training-data; ./run.sh rf-dQ1-dQ2-only
 
 # do twelve 10-day weather forecast prognostic and baseline runs
 weather_forecast_runs: kustomize
@@ -33,7 +43,8 @@ weather_forecast_runs: kustomize
 
 # generate prognostic run reports
 prognostic_reports: kustomize
-	cd workflow/prognostic-reports; ./run.sh
+	./kustomize build workflow | kubectl apply -f -
+	cd workflow/prognostic-run-report; ./run.sh
 
 create_environment:
 	make -C fv3net create_environment
@@ -41,5 +52,5 @@ create_environment:
 .PHONY: nudge_to_obs_run baseline_run train_evaluate_prognostic_run weather_forecast_runs prognostic_reports
 
 kustomize:
-	../install_kustomize.sh 3.8.6
+	./install_kustomize.sh 3.10.0
 

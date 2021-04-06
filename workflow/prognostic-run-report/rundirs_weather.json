@@ -4,95 +4,143 @@
     "name": "20160101-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160101.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160101.000000_rf-control",
     "name": "20160101-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160101.000000_rf-dQ1-dQ2-only",
+    "name": "20160101-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160201.000000_baseline",
     "name": "20160201-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160201.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160201.000000_rf-control",
     "name": "20160201-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160201.000000_rf-dQ1-dQ2-only",
+    "name": "20160201-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160301.000000_baseline",
     "name": "20160301-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160301.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160301.000000_rf-control",
     "name": "20160301-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160301.000000_rf-dQ1-dQ2-only",
+    "name": "20160301-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160401.000000_baseline",
     "name": "20160401-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160401.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160401.000000_rf-control",
     "name": "20160401-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160401.000000_rf-dQ1-dQ2-only",
+    "name": "20160401-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160501.000000_baseline",
     "name": "20160501-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160501.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160501.000000_rf-control",
     "name": "20160501-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160501.000000_rf-dQ1-dQ2-only",
+    "name": "20160501-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160601.000000_baseline",
     "name": "20160601-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160601.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160601.000000_rf-control",
     "name": "20160601-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160601.000000_rf-dQ1-dQ2-only",
+    "name": "20160601-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160701.000000_baseline",
     "name": "20160701-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160701.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160701.000000_rf-control",
     "name": "20160701-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160701.000000_rf-dQ1-dQ2-only",
+    "name": "20160701-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160801.000000_baseline",
     "name": "20160801-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160801.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160801.000000_rf-control",
     "name": "20160801-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160801.000000_rf-dQ1-dQ2-only",
+    "name": "20160801-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160901.000000_baseline",
     "name": "20160901-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20160901.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160901.000000_rf-control",
     "name": "20160901-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20160901.000000_rf-dQ1-dQ2-only",
+    "name": "20160901-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20161001.000000_baseline",
     "name": "20161001-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20161001.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20161001.000000_rf-control",
     "name": "20161001-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20161001.000000_rf-dQ1-dQ2-only",
+    "name": "20161001-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20161101.000000_baseline",
     "name": "20161101-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20161101.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20161101.000000_rf-control",
     "name": "20161101-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20161101.000000_rf-dQ1-dQ2-only",
+    "name": "20161101-rf-dQ1-dQ2-only"
   },
   {
     "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20161201.000000_baseline",
     "name": "20161201-baseline"
   },
   {
-    "url": "gs://vcm-ml-experiments/2020-10-30-nudge-to-obs-GRL-paper/weather-forecasts/20161201.000000_rf-control",
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20161201.000000_rf-control",
     "name": "20161201-rf-control"
+  },
+  {
+    "url": "gs://vcm-ml-experiments/2021-03-15-nudge-to-obs-GRL-paper-rev1/weather-forecasts/20161201.000000_rf-dQ1-dQ2-only",
+    "name": "20161201-rf-dQ1-dQ2-only"
   }
 ]

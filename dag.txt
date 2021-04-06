@@ -7,18 +7,18 @@ bb="-3.951,-7.885,3.802,11.277"
 "prognostic-run-report" [pos="-0.534,0.820"]
 "train-evaluate-prognostic-run" [pos="-2.007,-4.277"]
 "weather-forecasts" [pos="-1.283,-1.689"]
-figure2_figureS1_figureS2.ipynb [adjusted,pos="-2.934,4.245"]
-figure3_figureS3.ipynb [adjusted,pos="-0.599,5.134"]
-figure4_figureS4.ipynb [adjusted,pos="0.776,5.160"]
-figureS5.ipynb [adjusted,pos="1.931,5.160"]
-figureS6.ipynb [adjusted,pos="-1.771,5.134"]
+figure2_figureS1_figureS6.ipynb [adjusted,pos="-2.934,4.245"]
+figure3_figureS2.ipynb [adjusted,pos="-0.599,5.134"]
+figure4_figureS3.ipynb [adjusted,pos="0.776,5.160"]
+figureS4.ipynb [adjusted,pos="1.931,5.160"]
+figureS5.ipynb [adjusted,pos="-1.771,5.134"]
 "baseline-run" -> "prognostic-run-report"
 "nudge-to-obs-run" -> "train-evaluate-prognostic-run"
-"prognostic-run-report" -> figure3_figureS3.ipynb
-"prognostic-run-report" -> figure4_figureS4.ipynb
-"prognostic-run-report" -> figureS5.ipynb
+"prognostic-run-report" -> figure3_figureS2.ipynb
+"prognostic-run-report" -> figure4_figureS3.ipynb
+"prognostic-run-report" -> figureS4.ipynb
 "train-evaluate-prognostic-run" -> "weather-forecasts"
-"train-evaluate-prognostic-run" -> figure2_figureS1_figureS2.ipynb
-"train-evaluate-prognostic-run" -> figureS6.ipynb
+"train-evaluate-prognostic-run" -> figure2_figureS1_figureS6.ipynb
+"train-evaluate-prognostic-run" -> figureS5.ipynb
 "weather-forecasts" -> "prognostic-run-report"
 }
