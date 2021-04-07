@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4667727.svg)](https://doi.org/10.5281/zenodo.4667727)
+
 # nudge-to-obs-manuscript-workflow
 Code and configuration to generate the data and figures in Watt-Meyer et al. (2021) "Correcting weather and climate models by machine learning nudged historical simulations".
 
