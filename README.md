@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4667727.svg)](https://doi.org/10.5281/zenodo.4667727)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5116510.svg)](https://doi.org/10.5281/zenodo.5116510)
 
 # nudge-to-obs-manuscript-workflow
 Code and configuration to generate the data and figures in [Watt-Meyer et al. (2021)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021GL092555) "Correcting weather and climate models by machine learning nudged historical simulations".
