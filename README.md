@@ -1,13 +1,13 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4667727.svg)](https://doi.org/10.5281/zenodo.4667727)
 
 # nudge-to-obs-manuscript-workflow
-Code and configuration to generate the data and figures in Watt-Meyer et al. (2021) "Correcting weather and climate models by machine learning nudged historical simulations".
+Code and configuration to generate the data and figures in [Watt-Meyer et al. (2021)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021GL092555) "Correcting weather and climate models by machine learning nudged historical simulations".
 
 ![Nudging schematic](notebooks/figure1.png)
 Figure 1 of Watt-Meyer et al. (2021).
 
 ## Overview
-This repository consolidates and archives the code used to generate the results in Watt-Meyer et al. (2021) in one place. This may be helpful for readers of that manuscript to understand the tools used and details of the method. However, it is not expected that the code here will be easily executed by external users since it uses specific cloud computing resources provisioned for the Vulcan Climate Modeling group. See [fv3gfs-wrapper](https://github.com/VulcanClimateModeling/fv3gfs-wrapper) for a public-facing python-wrapper of the FV3GFS atmospheric model.
+This repository consolidates and archives the code used to generate the results in [Watt-Meyer et al. (2021)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021GL092555) in one place. This may be helpful for readers of that manuscript to understand the tools used and details of the method. However, it is not expected that the code here will be easily executed by external users since it uses specific cloud computing resources provisioned for the Vulcan Climate Modeling group. See [fv3gfs-wrapper](https://github.com/VulcanClimateModeling/fv3gfs-wrapper) for a public-facing python-wrapper of the FV3GFS atmospheric model.
 
 The source code and workflow definitions are contained within the `fv3net` submodule. The configuration and submission scripts for the workflows are in `workflow` and `notebooks` contains Jupyter notebooks which generate all of the figures for the manuscript.
 
