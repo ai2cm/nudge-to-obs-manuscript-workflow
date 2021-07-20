@@ -22,11 +22,12 @@ The source code and workflow definitions are contained within the `fv3net` submo
 ├── install_kustomize.sh
 ├── notebooks                               Jupyter notebooks to generate manuscript figures
 │   ├── figure1.png
-│   ├── figure2_figureS1_figureS6.ipynb
+│   ├── figure2_figureS1_figureS7.ipynb
 │   ├── figure3_figureS2.ipynb
 │   ├── figure4_figureS3.ipynb
 │   ├── figureS4.ipynb
 │   ├── figureS5.ipynb
+│   ├── figureS6.ipynb
 │   └── how-active-is-humidity-limiter.ipynb
 └── workflow                                Configuration of workflows
     ├── baseline-run                        Year-long FV3GFS run with no ML
